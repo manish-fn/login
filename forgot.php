@@ -9,7 +9,7 @@ $a=$_POST['email'];
 </head>
 <body>
 <input type="text" name="email" placeholder="Enter the e-mail id"/>
-<input type="submit" name="submit" value="forgot"/>
+<input type="submit" name="submit" value="retrieve"/>
 </body>
 </html>
 
