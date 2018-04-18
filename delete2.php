@@ -12,7 +12,5 @@ if (mysqli_affected_rows($conn)) {
 else {
     echo "No changes.<br><br>";
 }
-conflict
 $conn->close();
-
 ?>
