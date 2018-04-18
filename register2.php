@@ -1,5 +1,5 @@
 <?php
-require 'database.php';
+include 'database.php';
 
 $a=$_POST['email'];
 $b=$_POST['password'];
@@ -22,3 +22,4 @@ if ($conn->query($sql) === TRUE)
 
 $conn->close();
 ?>
+

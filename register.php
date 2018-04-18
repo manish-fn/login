@@ -1,7 +1,6 @@
 <?php
-
 ?>
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +16,8 @@
 		<input type="password" placeholder="Enter password" name="password" value="">
 		<input type="password" placeholder="Confirm password" name="password1" value="">
 		<input type="submit">
-		<a href="login.php">Login Page</a>
+		<a href="login.php">Login Page</a></br>
+		<a href="delete.php">Delete Account</a>
 		</form>
 </body>
 </html>
