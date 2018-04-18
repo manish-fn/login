@@ -8,6 +8,7 @@ $a=$_POST['email'];
 <title>forgot password</title>
 </head>
 <body>
+<form action="forgot2.php" method="POST">
 <input type="text" name="email" placeholder="Enter the e-mail id"/>
 <input type="submit" name="submit" value="retrieve"/>
 </body>
