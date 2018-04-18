@@ -2,8 +2,6 @@
 require 'database.php';
 $a=$_POST['email'];
 
-?><?php $a=$_POST['email'];
-
 $sql = "SELECT email, password FROM student WHERE email='$a'";
 
 $result = $conn->query($sql);
@@ -24,13 +22,9 @@ $conn->close(); ?>
 <title>forgot password</title>
 </head>
 <body>
-<form action="forgot.php" method="POST">
+<form action="forgot2.php" method="POST">
 <input type="text" name="email" placeholder="Enter the e-mail id"/>
-<input type="submit" name="submit" value="forgot"/>
-
-
+<input type="submit" name="submit" value="retrieve"/>
 </form>
-
 </body>
 </html>
-
