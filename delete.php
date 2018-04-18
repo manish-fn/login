@@ -1,13 +1,11 @@
 <?php
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Delete</title>
 </head>
 <body> 
-        <form action="delete2.php" method="POST">
+    <form action="delete2.php" method="POST">
 	  <p>username</p>
 	  <input type="text" name="email" placeholder="Enter the e-mail"/>
 	  <p>password</p>
@@ -18,3 +16,4 @@
 	  </form>
 </body>
 </html>
+?>

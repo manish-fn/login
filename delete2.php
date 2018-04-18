@@ -1,16 +1,18 @@
 <?php
-require 'database.php';
-
+include 'database.php';
+conflict
 $a=$_POST['email'];
 $b=$_POST['password'];
+$sql = "DELETE FROM student WHERE email='$a' AND password='$b'";
+mysqli_query($conn,$sql);
 
-$sql = "DELETE FROM student WHERE email = '$a' AND password ='$b'";
-mysqli_query($conn, $sql);
-if (mysqli_affected_rows($conn) > 0) {
-    echo "You have successfully updated your data.<br><br>";
+if (mysqli_affected_rows($conn)) {
+    echo "row deleted.<br><br>";
 }
 else {
-    echo "The data you submitted matched the current data so nothing was changed.<br><br>";
+    echo "No changes.<br><br>";
 }
-mysqli_close($conn);
+conflict
+$conn->close();
+
 ?>
