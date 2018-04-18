@@ -1,5 +1,5 @@
 <?php
-require 'database.php';
+include 'database.php';
 
 $a=$_POST['email'];
 $b=$_POST['password'];
@@ -12,7 +12,7 @@ if (($b!=$c) || ($a==NULL) ||($b==NULL))
 		exit();
 	}
 
-$sql = "INSERT INTO users (email, password) VALUES ('$a', '$b')";
+$sql = "INSERT INTO student (email, password) VALUES ('$a', '$b')";
 if ($conn->query($sql) === TRUE) 
 	{
     echo "\nNew record created successfully";
@@ -22,3 +22,4 @@ if ($conn->query($sql) === TRUE)
 
 $conn->close();
 ?>
+
